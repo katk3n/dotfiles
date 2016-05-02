@@ -1,33 +1,49 @@
-""" coded by kentaktwo
-""" Last Update: 2015/12/28 17:34:49.
-
-""" neobundle
-filetype plugin indent off
-if has('vim_starting')
-    set rtp+=~/.vim/bundle/neobundle/
-    call neobundle#rc(expand('~/.vim/bundle'))
+"dein Scripts-----------------------------
+if &compatible
+  set nocompatible               " Be iMproved
 endif
 
-NeoBundle 'Shougo/neobundle'
-NeoBundle 'houtsnip/vim-emacscommandline'
-NeoBundle 'Shougo/unite'
-NeoBundle 'YankRing'
-NeoBundle 'gtags'
-NeoBundle 'autodate'
-NeoBundle 'tangledhelix/vim-octopress'
-NeoBundle 'mattn/webapi-vim'
-NeoBundle 'mattn/vimplenote-vim'
-NeoBundle 'tomasr/molokai'
-"NeoBundle 'vim-jp/vim-go-extra'
-"NeoBundle 'google/vim-ft-go'
-NeoBundle 'fatih/vim-go'
-NeoBundle 'scrooloose/syntastic'
+" Required:
+set runtimepath^=/Users/kentaktwo/.vim/dein/repos/github.com/Shougo/dein.vim
+
+" Required:
+call dein#begin(expand('~/.vim/dein'))
+
+" Let dein manage dein
+" Required:
+call dein#add('Shougo/dein.vim')
+
+" Add or remove your plugins here:
+call dein#add('Shougo/neosnippet.vim')
+call dein#add('Shougo/neosnippet-snippets')
+call dein#add('Shougo/unite.vim')
+call dein#add('houtsnip/vim-emacscommandline')
+call dein#add('YankRing.vim')
+call dein#add('gtags.vim')
+call dein#add('tangledhelix/vim-octopress')
+call dein#add('mattn/webapi-vim')
+call dein#add('mattn/vimplenote-vim')
+call dein#add('tomasr/molokai')
+call dein#add('fatih/vim-go')
+call dein#add('scrooloose/syntastic')
+
+" You can specify revision/branch/tag.
+call dein#add('Shougo/vimshell', { 'rev': '3787e5' })
+
+" Required:
+call dein#end()
+
+" Required:
+filetype plugin indent on
+
+" If you want to install not installed plugins on startup.
+if dein#check_install()
+  call dein#install()
+endif
+
+"End dein Scripts-------------------------
 
 set rtp^=$GOPATH/src/github.com/nsf/gocode/vim
-
-
-filetype plugin indent on
-"""
 
 syntax on
 set encoding=utf-8
@@ -155,11 +171,6 @@ nmap <C-j> :Gtags <C-r><C-w><CR>
 "nmap <C-k> :Gtags -r <C-r><C-w><CR>
 "nmap <C-n> :cn<CR>
 "nmap <C-p> :cp<CR>
-
-""" autodate.vim
-let autodate_keyword_pre="Last Update:"
-let autodate_format="%Y/%m/%d %H:%M:%S"
-
 
 """ Unite.vim
 " 起動時にインサートモードで開始
