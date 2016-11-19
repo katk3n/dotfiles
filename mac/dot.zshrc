@@ -1,12 +1,13 @@
-# coded by kentaktwo
-# Last Change: 2012/04/04 01:26:04.
-
 # 文字コードの設定
 export LANG=en_US.UTF-8
+
+# TERM
+export TERM=xterm-256color
 
 # パスの設定
 export PATH=$HOME/bin:$HOME/.nodebrew/current/bin:/usr/local/bin:$PATH
 export MANPATH=/usr/local/share/man:/usr/local/man:/usr/share/man
+export XDG_CONFIG_HOME="$HOME/.config"
 
 # 関数
 find-grep () { find . -type f -print | xargs grep -n --binary-files=without-match $@ }

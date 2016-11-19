@@ -1,0 +1,54 @@
+[[plugins]]
+repo = 'Shougo/dein.vim'
+
+[[plugins]] # ステータスライン
+repo = 'itchyny/lightline.vim'
+hook_add = '''
+let g:lightline = {
+    \ 'colorscheme': 'wombat',
+    \ }
+'''
+
+[[plugins]]
+repo = 'Shougo/vimproc.vim'
+build = 'make'
+
+[[plugins]]
+repo = 'houtsnip/vim-emacscommandline'
+
+[[plugins]]
+repo = 'scrooloose/syntastic'
+hook_add = '''
+    let g:syntastic_enable_signs=1
+    let g:syntastic_auto_loc_list=2
+    let g:syntastic_go_checkers = ['golint', 'gotype', 'govet', 'go']
+'''
+
+# Lang
+[[plugins]] # Toml
+repo  = 'cespare/vim-toml'
+on_ft = 'toml'
+
+[[plugins]]
+repo = 'fatih/vim-go'
+on_ft = 'go'
+hook_source = '''
+    let g:go_fmt_command = 'goimports'
+    let s:goargs = go#package#ImportPath(expand('%:p:h'))
+    let g:neomake_go_errcheck_maker = {
+        \ 'args': ['-abspath', s:goargs],
+        \ 'append_file': 0,
+        \ 'errorformat': '%f:%l:%c:\ %m, %f:%l:%c\ %#%m',
+        \ }
+    let g:neomake_go_enabled_makers = ['golint', 'govet', 'errcheck']
+'''
+
+[[plugins]]
+repo = 'neomake/neomake'
+hook_add = '''
+  autocmd! BufWritePost * Neomake
+'''
+
+# Colorscheme
+[[plugins]]
+repo = 'tomasr/molokai'
