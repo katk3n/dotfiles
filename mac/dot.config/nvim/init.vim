@@ -7,7 +7,7 @@ endif
 let g:cache_dir = empty($XDG_CACHE_HOME) ? expand('$HOME/.cache') : $XDG_CACHE_HOME
 let g:config_dir = empty($XDG_CONFIG_HOME) ? expand('$HOME/.config') : $XDG_CONFIG_HOME
 let s:dein_cache_dir = g:cache_dir . '/dein'
-let s:dein_config_dir = g:config_dir . '/dein'
+let s:dein_config_dir = g:config_dir . '/nvim'
 let s:dein_repo_dir = s:dein_cache_dir . '/repos/github.com/Shougo/dein.vim'
 
 " なければgit clone
@@ -20,8 +20,8 @@ if dein#load_state(s:dein_cache_dir)
   call dein#begin(s:dein_cache_dir)
 
   " 管理するプラグインを記述したファイル
-  let s:toml = s:dein_config_dir . '/plugins.toml'
-  let s:lazy_toml = s:dein_config_dir . '/plugins_lazy.toml'
+  let s:toml = s:dein_config_dir . '/dein.toml'
+  let s:lazy_toml = s:dein_config_dir . '/dein_lazy.toml'
   call dein#load_toml(s:toml, {'lazy': 0})
   call dein#load_toml(s:lazy_toml, {'lazy': 1})
 
@@ -60,7 +60,6 @@ colorscheme molokai
 """ 表示関係
 set wildmode=longest,list
 set laststatus=2    " ステータスライン表示
-set rtp+=~/.vim/neobundle/powerline/powerline/bindings/vim
 set textwidth=0     " 自動的に改行が入るのを無効化
 
 """ インデント
