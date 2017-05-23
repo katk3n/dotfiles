@@ -26,7 +26,8 @@ alias screen='screen -U'
 # MacVim
 export EDITOR=/Applications/MacVim.app/Contents/MacOS/Vim
 #alias vi='open -a /Applications/MacVim.app/Contents/MacOS/Vim'
-alias vim='env LANG=ja_JP.UTF-8 /Applications/MacVim.app/Contents/MacOS/Vim "$@"'
+#alias vim='env LANG=ja_JP.UTF-8 /Applications/MacVim.app/Contents/MacOS/Vim "$@"'
+alias vim='nvim'
 
 # プロンプトの設定 
 #PROMPT='%~# '
@@ -147,8 +148,18 @@ export PATH="$PATH:$HOME/.rvm/bin" # Add RVM to PATH for scripting
 
 ## go
 if [ -x "`which go`" ]; then
-    export GOPATH=$HOME/go
+    export GOPATH=$HOME/work
     export GOROOT=/usr/local/opt/go/libexec
     #export GOROOT=`go env GOROOT`
     export PATH=$PATH:$GOROOT/bin:$GOPATH/bin
+fi
+
+# The next line updates PATH for the Google Cloud SDK.
+if [ -f /Users/kentaktwo/google-cloud-sdk/path.zsh.inc ]; then
+  source '/Users/kentaktwo/google-cloud-sdk/path.zsh.inc'
+fi
+
+# The next line enables shell command completion for gcloud.
+if [ -f /Users/kentaktwo/google-cloud-sdk/completion.zsh.inc ]; then
+  source '/Users/kentaktwo/google-cloud-sdk/completion.zsh.inc'
 fi

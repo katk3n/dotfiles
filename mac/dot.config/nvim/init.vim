@@ -73,6 +73,14 @@ inoremap # X#
 vnoremap < <gv
 vnoremap > >gv
 
+""" filetype
+autocmd! BufNewFile,BufRead *.xml set tabstop=2 shiftwidth=2 softtabstop=2
+autocmd! BufNewFile,BufRead *.html set tabstop=2 shiftwidth=2 softtabstop=2
+autocmd! BufNewFile,BufRead *.js set tabstop=2 shiftwidth=2 softtabstop=2
+autocmd! BufNewFile,BufRead *.ts set tabstop=2 shiftwidth=2 softtabstop=2
+autocmd! BufNewFile,BufRead *.cc set tabstop=2 shiftwidth=2 softtabstop=2
+autocmd! BufNewFile,BufRead *.h set tabstop=2 shiftwidth=2 softtabstop=2
+
 """ 検索
 set ignorecase  " 大文字小文字を区別しない
 set smartcase   " 検索文字に大文字がある場合は区別する

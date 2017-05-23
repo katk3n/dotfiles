@@ -71,6 +71,12 @@ hook_add = '''
     let g:go_template_autocreate = 0
 '''
 
+[[plugins]]
+repo = 'ryym/vim-riot'
+
+[[plugins]]
+repo = 'leafgarland/typescript-vim'
+
 # Colorscheme
 [[plugins]]
 repo = 'tomasr/molokai'
