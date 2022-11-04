@@ -1,7 +1,7 @@
 export TERM=xterm-256color
+setopt no_beep
 
 # Set up the prompt
-
 autoload -Uz promptinit
 promptinit
 
