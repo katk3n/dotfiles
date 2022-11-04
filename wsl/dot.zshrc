@@ -62,3 +62,12 @@ zstyle ':completion:*' verbose true
 
 zstyle ':completion:*:*:kill:*:processes' list-colors '=(#b) #([0-9]#)*=0=01;31'
 zstyle ':completion:*:kill:*' command 'ps -u $USER -o pid,%cpu,tty,cputime,cmd'
+
+# keychain
+if [ -e $HOME/.keychain/$HOST-sh ]; then
+  source $HOME/.keychain/$HOST-sh
+else
+  echo 'keychain is not set up. please set up keychain by:'
+  echo '> /usr/bin/keychain -q --nogui <path/to/private_key>'
+  echo '> source $HOME/.keychain/$HOST-sh'
+fi
