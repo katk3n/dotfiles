@@ -1,4 +1,4 @@
-export PATH=$HOME/bin:$HOME/.nodebrew/current/bin:/usr/local/bin:/opt/homebrew/bin:$PATH
+export PATH=$HOME/bin:$HOME/.nodebrew/current/bin:/usr/local/bin:/opt/homebrew/bin:/opt/homebrew/opt/llvm/bin:$PATH
 
 eval "$(starship init zsh)"
 
