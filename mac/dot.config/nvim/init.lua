@@ -24,6 +24,9 @@ vim.api.nvim_set_var("loaded_netrwPlugin", 1)
 vim.g.mapleader = " "
 vim.keymap.set("n", "<leader><Tab>", "<C-^>", { noremap = true })
 
+-- let <ESC> quit terminal mode
+vim.keymap.set("t", "<ESC>", "<C-\\><C-n>", { noremap = true })
+
 -- continue selecting area after changing indentation in visual mode
 vim.keymap.set("v", "<", "<gv", { noremap = true })
 vim.keymap.set("v", ">", ">gv", { noremap = true })
