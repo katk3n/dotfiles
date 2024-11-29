@@ -38,6 +38,9 @@ vim.opt.hlsearch = true
 vim.opt.incsearch = true
 vim.keymap.set("n", "<ESC><ESC>", "<cmd>nohlsearch<CR>", { noremap = true })
 
+-- auto format when saving
+vim.cmd([[autocmd BufWritePre * lua vim.lsp.buf.format()]])
+
 require("config.lazy")
 
 vim.cmd[[colorscheme tokyonight]]
