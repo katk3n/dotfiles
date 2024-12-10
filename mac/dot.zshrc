@@ -1,4 +1,4 @@
-export PATH=$HOME/bin:$HOME/.nodebrew/current/bin:/usr/local/bin:/opt/homebrew/bin:/opt/homebrew/opt/llvm/bin:$PATH
+export PATH=$HOME/bin:$HOME/.nodebrew/current/bin:/usr/local/bin:/opt/homebrew/bin:/opt/homebrew/opt/llvm/bin:$HOME/go/bin:$PATH
 
 setopt no_beep
 

@@ -10,6 +10,8 @@ local lsp_servers = {
   "ts_ls",
   "html",
   "cssls",
+  "gopls",
+  "wgsl_analyzer",
 }
 
 local formatters = {
