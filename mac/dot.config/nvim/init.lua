@@ -1,5 +1,8 @@
 local opt = vim.opt
 
+-- share clipboard
+vim.opt.clipboard:append({ "unnamedplus" })
+
 -- show line number
 opt.number = true
 
