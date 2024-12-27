@@ -25,6 +25,7 @@ vim.api.nvim_set_var("loaded_netrwPlugin", 1)
 
 -- keymap
 vim.g.mapleader = " "
+vim.g.maplocalleader = " "
 vim.keymap.set("n", "<leader><Tab>", "<C-^>", { noremap = true })
 
 -- let <ESC> quit terminal mode

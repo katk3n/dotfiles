@@ -65,3 +65,4 @@ unsetopt promptcr
 # starship
 # ----------------
 eval "$(starship init zsh)"
+source ${HOME}/.ghcup/env
