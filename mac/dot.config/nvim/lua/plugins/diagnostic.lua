@@ -8,6 +8,7 @@ return {
     require("tiny-inline-diagnostic").setup({
       options = {
         show_source = true,
+        multiple_diag_under_cursor = true,
         multilines = {
           enabled = true,
           always_show = true,
