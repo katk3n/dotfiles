@@ -13,6 +13,21 @@ opt.tabstop = 2
 opt.softtabstop = 2
 opt.shiftwidth = 2
 
+-- filetype specific indent setting
+local filetype_tabstop = { wgsl = 4 }
+local usrftcfg = vim.api.nvim_create_augroup("UserFileTypeConfig", { clear = true })
+vim.api.nvim_create_autocmd("FileType", {
+  group = usrftcfg,
+  callback = function(args)
+    local ftts = filetype_tabstop[args.match]
+    if ftts then
+      vim.bo.tabstop = ftts
+      vim.bo.softtabstop = ftts
+      vim.bo.shiftwidth = ftts
+    end
+  end,
+})
+
 -- use spaces for tabs
 opt.expandtab = true
 
