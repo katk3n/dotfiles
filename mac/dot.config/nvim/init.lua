@@ -35,6 +35,9 @@ vim.keymap.set("t", "<ESC>", "<C-\\><C-n>", { noremap = true })
 vim.keymap.set("v", "<", "<gv", { noremap = true })
 vim.keymap.set("v", ">", ">gv", { noremap = true })
 
+-- Shift-Tab to tab backwards
+vim.keymap.set("i", "<S-Tab>", "<C-d>", { noremap = true })
+
 -- search
 vim.opt.ignorecase = true
 vim.opt.smartcase = true
