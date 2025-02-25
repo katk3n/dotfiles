@@ -1,0 +1,38 @@
+theme = "tokyonight_custom"
+
+[editor]
+color-modes = true
+end-of-line-diagnostics = "hint"
+
+[editor.inline-diagnostics]
+other-lines = "hint"
+
+[editor.statusline]
+left = ["mode", "spinner", "version-control", "separator", "file-name", "read-only-indicator", "file-modification-indicator"]
+mode.normal = "NORMAL"
+mode.insert = "INSERT"
+mode.select = "SELECT"
+
+[editor.cursor-shape]
+normal = "block"
+insert = "bar"
+select = "underline"
+
+[editor.file-picker]
+"hidden" = false
+
+[keys.normal]
+0 = "goto_line_start"
+"$" = "goto_line_end"
+"G" = "goto_last_line"
+
+[keys.normal.space.l]
+# Open lazygit
+g = [
+    ":write-all",
+    ":new",
+    ":insert-output lazygit",
+    ":buffer-close!",
+    ":redraw",
+    ":reload-all"
+]

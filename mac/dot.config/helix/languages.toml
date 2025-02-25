@@ -1,0 +1,15 @@
+[[language]]
+name = "rust"
+auto-format = true
+
+[[language]]
+name = "wgsl"
+auto-format = true
+
+[[language]]
+name = "toml"
+auto-format = true
+
+[[language]]
+name = "markdown"
+auto-format = true
