@@ -8,7 +8,15 @@ end-of-line-diagnostics = "hint"
 other-lines = "hint"
 
 [editor.statusline]
-left = ["mode", "spinner", "version-control", "separator", "file-name", "read-only-indicator", "file-modification-indicator"]
+left = [
+  "mode",
+  "spinner",
+  "version-control",
+  "separator",
+  "file-name",
+  "read-only-indicator",
+  "file-modification-indicator",
+]
 mode.normal = "NORMAL"
 mode.insert = "INSERT"
 mode.select = "SELECT"
@@ -19,20 +27,21 @@ insert = "bar"
 select = "underline"
 
 [editor.file-picker]
-"hidden" = false
+hidden = false
+
+[editor.lsp]
+display-inlay-hints = false
 
 [keys.normal]
 0 = "goto_line_start"
 "$" = "goto_line_end"
-"G" = "goto_last_line"
-
-[keys.normal.space.l]
-# Open lazygit
-g = [
-    ":write-all",
-    ":new",
-    ":insert-output lazygit",
-    ":buffer-close!",
-    ":redraw",
-    ":reload-all"
+G = "goto_last_line"
+C-g = [
+  ":write-all",
+  ":new",
+  ":insert-output lazygit",
+  ":buffer-close!",
+  ":redraw",
+  ":reload-all",
 ]
+C-y = ":sh wezterm cli split-pane --left --percent 40 -- ~/.config/helix/wezilix.sh $WEZTERM_PANE open > /dev/null"
