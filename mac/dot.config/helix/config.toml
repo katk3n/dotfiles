@@ -5,7 +5,7 @@ color-modes = true
 end-of-line-diagnostics = "hint"
 
 [editor.inline-diagnostics]
-other-lines = "hint"
+cursor-line = "warning"
 
 [editor.statusline]
 left = [
@@ -32,6 +32,9 @@ hidden = false
 [editor.lsp]
 display-inlay-hints = false
 
+[editor.soft-wrap]
+enable = true
+
 [keys.normal]
 0 = "goto_line_start"
 "$" = "goto_line_end"
@@ -45,3 +48,8 @@ C-g = [
   ":reload-all",
 ]
 C-y = ":sh wezterm cli split-pane --left --percent 40 -- ~/.config/helix/wezilix.sh $WEZTERM_PANE open > /dev/null"
+
+[keys.select]
+0 = "goto_line_start"
+"$" = "goto_line_end"
+G = "goto_last_line"
