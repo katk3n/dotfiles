@@ -2,3 +2,14 @@ inherits = "tokyonight_moon"
 
 "ui.background" = "none"
 "ui.text" = { "bg" = "none" }
+"ui.window" = { "fg" = "gray" }
+
+function = { fg = "blue" }
+keyword = { fg = "purple" }
+"keyword.control.return" = { fg = "purple" }
+"variable.parameter" = { fg = "yellow" }
+
+error = { fg = "error", modifiers = ["italic"] }
+warning = { fg = "yellow", modifiers = ["italic"] }
+info = { fg = "info", modifiers = ["italic"] }
+hint = { fg = "hint", modifiers = ["italic"] }

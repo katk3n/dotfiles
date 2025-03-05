@@ -10,10 +10,20 @@ config.window_background_opacity = 0.90
 --config.font = wezterm.font("Hack Nerd Font Mono", { weight = "Medium", stretch = "Normal", style = "Normal" })
 --config.font = wezterm.font("HackGen35 Console NF", { weight = "Medium", stretch = "Normal", style = "Normal" })
 config.font = wezterm.font_with_fallback({
-  { family = "Monaspace Argon",       weight = "Medium", stretch = "Normal", style = "Normal" },
-  { family = "Moralerspace Argon NF", weight = "Medium", stretch = "Normal", style = "Normal" },
+  { family = "Monaspace Argon",       weight = "Regular", stretch = "Normal", style = "Normal" },
+  { family = "Moralerspace Argon NF", weight = "Regular", stretch = "Normal", style = "Normal" },
 })
-config.font_size = 14
+config.font_rules = {
+  { -- Italic
+    intensity = 'Normal',
+    italic = true,
+    font = wezterm.font_with_fallback({
+      { family = "Monaspace Radon",       weight = "Regular", stretch = "Normal", style = "Italic" },
+      { family = "Moralerspace Radon NF", weight = "Regular", stretch = "Normal", style = "Italic" },
+    })
+  },
+}
+config.font_size = 13
 
 config.leader = {
   key = "q",
