@@ -10,7 +10,7 @@ config.window_background_opacity = 0.90
 --config.font = wezterm.font("Hack Nerd Font Mono", { weight = "Medium", stretch = "Normal", style = "Normal" })
 --config.font = wezterm.font("HackGen35 Console NF", { weight = "Medium", stretch = "Normal", style = "Normal" })
 config.font = wezterm.font_with_fallback({
-  { family = "Monaspace Argon",       weight = "Regular", stretch = "Normal", style = "Normal" },
+  { family = "Monaspace Argon Var",   weight = "Regular", stretch = "Normal", style = "Normal" },
   { family = "Moralerspace Argon NF", weight = "Regular", stretch = "Normal", style = "Normal" },
 })
 config.font_rules = {
@@ -23,7 +23,8 @@ config.font_rules = {
     })
   },
 }
-config.font_size = 13
+config.font_size = 14
+config.cell_width = 0.9
 
 config.leader = {
   key = "q",
