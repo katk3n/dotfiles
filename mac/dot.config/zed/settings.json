@@ -7,6 +7,9 @@
 // custom settings, run `zed: open default settings` from the
 // command palette (cmd-shift-p / ctrl-shift-p)
 {
+  "features": {
+    "edit_prediction_provider": "zed"
+  },
   "telemetry": {
     "metrics": false,
     "diagnostics": false
@@ -43,7 +46,7 @@
     "terminal.background": "#00000000",
     "toolbar.background": "#1f233510",
     "tab.inactive_background": "#00000000",
-    "tab.active_background": "#3f3f4650",
+    "tab.active_background": "#414868e0",
     "border": "#24283b10",
     "border.variant": "#00000000",
     "scrollbar.track.background": "#00000000",
