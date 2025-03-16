@@ -7,6 +7,9 @@
 // custom settings, run `zed: open default settings` from the
 // command palette (cmd-shift-p / ctrl-shift-p)
 {
+  "auto_update_extensions": {
+    "wgsl": false
+  },
   "features": {
     "edit_prediction_provider": "zed"
   },
@@ -39,7 +42,7 @@
   },
   "experimental.theme_overrides": {
     "background.appearance": "transparent",
-    "background": "#24283be0",
+    "background": "#1a1b26e0",
     "panel.background": "#00000000",
     "editor.background": "#00000000",
     "tab_bar.background": "#1f233510",
@@ -49,9 +52,9 @@
     "tab.active_background": "#414868e0",
     "border": "#24283b10",
     "border.variant": "#00000000",
-    "scrollbar.track.background": "#00000000",
+    "scrollbar.track.background": "#ffffff10",
     "scrollbar.track.border": "#00000000",
-    "scrollbar.thumb.background": "#00000000",
+    "scrollbar.thumb.background": "#ffffff30",
     "scrollbar.thumb.border": "#00000000",
     "elevated_surface.background": "#00000090",
     "surface.background": "#00000090",
@@ -60,7 +63,7 @@
     "editor.indent_guide": "#ffffff30",
     "editor.indent_guide_active": "#ffffff80",
     "editor.line_number": "#5f6996",
-    "editor.active_line.background": "#5f699630",
+    "editor.active_line.background": "#5f699616",
     "syntax": {
       "comment": {
         "font_style": "italic"
