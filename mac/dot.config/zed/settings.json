@@ -45,7 +45,11 @@
     "editor.background": "#24273a00",
     "editor.gutter.background": "#24273a0a",
     "terminal.background": "#24273a00",
-    "terminal.ansi.background": "#24273a00"
+    "terminal.ansi.background": "#24273a00",
+    "toolbar.background": "#24273a10",
+    "tab_bar.background": "#18192610",
+    "tab.inactive_background": "#12121c80"
+    //"tab.active_background": "#24273a10"
   },
   "file_types": {
     "Haskell": ["tidal"]
