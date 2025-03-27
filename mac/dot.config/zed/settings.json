@@ -29,46 +29,23 @@
     "file_icons": true,
     "git_status": true
   },
-  "ui_font_size": 13,
-  "buffer_font_size": 13,
+  "ui_font_size": 14,
+  "buffer_font_size": 14,
   "buffer_font_family": "Monaspace Argon Var",
   "buffer_font_fallbacks": ["Moralerspace Argon NF"],
   "ui_font_family": "Monaspace Argon Var",
   "ui_font_fallbacks": ["Moralerspace Argon NF"],
-  "theme": {
-    "mode": "system",
-    "light": "Tokyo Night Light",
-    "dark": "Tokyo Night Storm"
-  },
+  "theme": "Catppuccin Macchiato",
   "experimental.theme_overrides": {
     "background.appearance": "transparent",
-    "background": "#1a1b26e0",
-    "panel.background": "#00000000",
-    "editor.background": "#00000000",
-    "tab_bar.background": "#1f233510",
-    "terminal.background": "#00000000",
-    "toolbar.background": "#1f233510",
-    "tab.inactive_background": "#00000000",
-    "tab.active_background": "#414868e0",
-    "border": "#24283bff",
-    "border.variant": "#00000000",
-    "scrollbar.track.background": "#ffffff10",
-    "scrollbar.track.border": "#00000000",
-    "scrollbar.thumb.background": "#ffffff30",
-    "scrollbar.thumb.border": "#00000000",
-    "elevated_surface.background": "#00000090",
-    "surface.background": "#00000090",
-    "editor.active_line_number": "#ffffffcc",
-    "editor.gutter.background": "#00000000",
-    "editor.indent_guide": "#ffffff30",
-    "editor.indent_guide_active": "#ffffff80",
-    "editor.line_number": "#5f6996",
-    "editor.active_line.background": "#5f699616",
-    "syntax": {
-      "comment": {
-        "font_style": "italic"
-      }
-    }
+    "elevated_surface.background": "#1e2030e0",
+    "surface.background": "#1e2030e0",
+    "background": "#24273ae0",
+    "panel.background": "#1e203000",
+    "editor.background": "#24273a00",
+    "editor.gutter.background": "#24273a0a",
+    "terminal.background": "#24273a00",
+    "terminal.ansi.background": "#24273a00"
   },
   "file_types": {
     "Haskell": ["tidal"]
