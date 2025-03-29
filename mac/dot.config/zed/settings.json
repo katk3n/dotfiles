@@ -49,7 +49,7 @@
     "toolbar.background": "#24273a10",
     "tab_bar.background": "#18192610",
     "tab.inactive_background": "#12121c00",
-    "tab.active_background": "#3f3f46a0"
+    "tab.active_background": "#3f3f46e0"
   },
   "file_types": {
     "Haskell": ["tidal"]
