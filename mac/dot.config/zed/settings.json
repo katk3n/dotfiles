@@ -7,6 +7,13 @@
 // custom settings, run `zed: open default settings` from the
 // command palette (cmd-shift-p / ctrl-shift-p)
 {
+  "agent": {
+    "default_model": {
+      "provider": "zed.dev",
+      "model": "claude-3-7-sonnet-latest"
+    },
+    "version": "2"
+  },
   "auto_update_extensions": {
     "wgsl": false
   },
@@ -33,22 +40,21 @@
   "buffer_font_size": 14,
   "buffer_font_family": "Monaspace Argon Var",
   "buffer_font_fallbacks": ["Moralerspace Argon NF"],
-  "ui_font_family": "Monaspace Argon Var",
-  "ui_font_fallbacks": ["Moralerspace Argon NF"],
   "theme": "Catppuccin Macchiato",
   "experimental.theme_overrides": {
     "background.appearance": "transparent",
     "elevated_surface.background": "#1e2030e0",
     "surface.background": "#1e2030e0",
-    "background": "#1e2030e0",
-    "panel.background": "#1e203000",
-    "editor.background": "#24273a00",
-    "editor.gutter.background": "#24273a0a",
-    "terminal.background": "#24273a00",
-    "toolbar.background": "#24273a10",
-    "tab_bar.background": "#18192610",
-    "tab.inactive_background": "#12121c00",
-    "tab.active_background": "#3f3f46e0"
+    //  "background": "#1e2030e0",
+    "ghost_element.background": "#18192600"
+    //  "panel.background": "#1e203000",
+    //  "editor.background": "#24273a00",
+    //  "editor.gutter.background": "#24273a0a",
+    //  "terminal.background": "#24273a10",
+    //  "toolbar.background": "#24273a10",
+    //  "tab_bar.background": "#18192610",
+    //  "tab.inactive_background": "#12121c00",
+    //  "tab.active_background": "#3f3f46e0"
   },
   "file_types": {
     "Haskell": ["tidal"]

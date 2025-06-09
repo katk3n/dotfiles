@@ -1,0 +1,89 @@
+{
+    "editor.fontSize": 14,
+    "editor.fontFamily": "'Monaspace Argon Var', 'Moralerspace Argon NF', Menlo, Monaco, 'Courier New', monospace",
+    "editor.minimap.enabled": false,
+    "workbench.colorTheme": "Catppuccin Macchiato",
+    "debug.console.fontSize": 14,
+    "terminal.integrated.fontSize": 14,
+    "chat.editor.fontSize": 14,
+    "terminal.integrated.letterSpacing": 1,
+    "editor.guides.bracketPairs": "active",
+    "editor.renderLineHighlight": "all",
+    "explorer.compactFolders": false,
+    "scm.compactFolders": false,
+    "scm.alwaysShowRepositories": true,
+    "scm.defaultViewMode": "tree",
+    "search.defaultViewMode": "tree",
+    "search.showLineNumbers": true,
+    "terminal.integrated.cursorBlinking": true,
+    "terminal.integrated.cursorStyle": "line",
+    "terminal.integrated.cursorStyleInactive": "line",
+    "terminal.integrated.cursorWidth": 2,
+    "vim.easymotion": true,
+    "vim.useSystemClipboard": true,
+    "vim.normalModeKeyBindingsNonRecursive": [
+        {
+            "before": [
+                "<space>"
+            ],
+            "commands": [
+                "vspacecode.space"
+            ]
+        },
+        {
+            "before": [
+                ","
+            ],
+            "commands": [
+                "vspacecode.space",
+                {
+                    "command": "whichkey.triggerKey",
+                    "args": "m"
+                }
+            ]
+        }
+    ],
+    "vim.visualModeKeyBindingsNonRecursive": [
+        {
+            "before": [
+                "<space>"
+            ],
+            "commands": [
+                "vspacecode.space"
+            ]
+        },
+        {
+            "before": [
+                ","
+            ],
+            "commands": [
+                "vspacecode.space",
+                {
+                    "command": "whichkey.triggerKey",
+                    "args": "m"
+                }
+            ]
+        },
+        {
+            "before": [
+                ">"
+            ],
+            "commands": [
+                "editor.action.indentLines"
+            ]
+        },
+        {
+            "before": [
+                "<"
+            ],
+            "commands": [
+                "editor.action.outdentLines"
+            ]
+        }
+    ],
+    "tidalcycles.useStackGhci": true,
+    "tidalcycles.bootTidalPath": "/Users/kentaktwo/.cabal/store/ghc-9.2.2/tdl-1.9.5-292f95c5/share/BootTidal.hs",
+    "files.associations": {
+        "*.tidal": "haskell"
+    }
+}
