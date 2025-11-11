@@ -1,0 +1,11 @@
+theme = TokyoNight
+
+font-family = "Monaspace Argon Var"
+font-family = "Moralerspace Argon"
+font-size = 14
+font-feature = -dlig
+font-thicken = true
+font-thicken-strength = 1
+alpha-blending = linear
+
+background-opacity = 0.90

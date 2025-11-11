@@ -1,4 +1,4 @@
-export PATH=$HOME/bin:$HOME/.nodebrew/current/bin:/usr/local/bin:/opt/homebrew/bin:/opt/homebrew/opt/llvm/bin:$HOME/go/bin:$PATH
+export PATH=$HOME/bin:$HOME/.nodebrew/current/bin:/usr/local/bin:/opt/homebrew/bin:/opt/homebrew/opt/llvm/bin:$HOME/go/bin:$HOME/.local/bin:$PATH
 
 setopt no_beep
 
@@ -66,3 +66,4 @@ unsetopt promptcr
 # ----------------
 eval "$(starship init zsh)"
 source ${HOME}/.ghcup/env
+
