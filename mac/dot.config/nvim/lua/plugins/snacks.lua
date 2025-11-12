@@ -8,7 +8,26 @@ return {
 		-- or leave it empty to use the default settings
 		-- refer to the configuration section below
 		-- bigfile = { enabled = true },
-		-- dashboard = { enabled = true },
+		dashboard = {
+			enabled = true,
+			sections = {
+				{ section = "header" },
+				{
+					text = "Version "
+						.. vim.version().major
+						.. "."
+						.. vim.version().minor
+						.. "."
+						.. vim.version().patch,
+					padding = 1,
+					align = "center",
+				},
+				{ icon = " ", title = "Keymaps", section = "keys", indent = 2, padding = 1 },
+				{ icon = " ", title = "Recent Files", section = "recent_files", indent = 2, padding = 1 },
+				{ icon = " ", title = "Projects", section = "projects", indent = 2, padding = 1 },
+				{ section = "startup" },
+			},
+		},
 		-- explorer = { enabled = true },
 		-- indent = { enabled = true },
 		-- input = { enabled = true },
