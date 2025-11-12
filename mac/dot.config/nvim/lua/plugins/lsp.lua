@@ -44,18 +44,10 @@ return {
     config = function()
       require("mason").setup()
 
-      -- Get capabilities from nvim-cmp for LSP completion
-      local has_cmp, cmp_nvim_lsp = pcall(require, "cmp_nvim_lsp")
-      local capabilities = vim.lsp.protocol.make_client_capabilities()
-      if has_cmp then
-        capabilities = vim.tbl_deep_extend("force", capabilities, cmp_nvim_lsp.default_capabilities())
-      end
-
       -- Configure LSP servers using vim.lsp.config (Neovim 0.11+)
       for _, server_name in ipairs(lsp_servers) do
         vim.lsp.config[server_name] = {
           root_markers = { ".git" },
-          capabilities = capabilities,
         }
       end
 
@@ -68,16 +60,6 @@ return {
             vim.lsp.enable(server_name)
           end,
         },
-      })
-
-      -- Enable built-in LSP completion (Neovim 0.11+)
-      vim.api.nvim_create_autocmd("LspAttach", {
-        callback = function(args)
-          local client = vim.lsp.get_client_by_id(args.data.client_id)
-          if client and client.supports_method("textDocument/completion") then
-            vim.lsp.completion.enable(true, client.id, args.buf, { autotrigger = true })
-          end
-        end,
       })
     end,
     cmd = "Mason",

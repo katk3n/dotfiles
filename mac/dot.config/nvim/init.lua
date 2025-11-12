@@ -60,9 +60,6 @@ vim.opt.hlsearch = true
 vim.opt.incsearch = true
 vim.keymap.set("n", "<ESC><ESC>", "<cmd>nohlsearch<CR>", { noremap = true })
 
--- completion
-vim.opt.completeopt = { "menuone", "noselect" }
-
 -- auto format when saving
 vim.api.nvim_create_autocmd("BufWritePre", {
   callback = function()
