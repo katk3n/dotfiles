@@ -13,6 +13,8 @@ return {
 		-- indent = { enabled = true },
 		-- input = { enabled = true },
 		picker = { enabled = true },
+		terminal = { enabled = true },
+		lazygit = { enabled = true },
 		-- notifier = { enabled = true },
 		-- quickfile = { enabled = true },
 		-- scope = { enabled = true },
@@ -63,6 +65,43 @@ return {
 				Snacks.explorer()
 			end,
 			desc = "File Explorer",
+		},
+		-- Terminal
+		{
+			"<C-\\>",
+			function()
+				Snacks.terminal()
+			end,
+			desc = "Toggle Terminal",
+		},
+		{
+			"<leader>th",
+			function()
+				Snacks.terminal(nil, { win = { position = "bottom" } })
+			end,
+			desc = "Terminal Horizontal",
+		},
+		{
+			"<leader>tv",
+			function()
+				Snacks.terminal(nil, { win = { position = "right" } })
+			end,
+			desc = "Terminal Vertical",
+		},
+		{
+			"<leader>tf",
+			function()
+				Snacks.terminal(nil, { win = { position = "float" } })
+			end,
+			desc = "Terminal Float",
+		},
+		-- Git
+		{
+			"<leader>lg",
+			function()
+				Snacks.lazygit()
+			end,
+			desc = "Lazygit",
 		},
 	},
 }

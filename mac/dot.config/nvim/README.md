@@ -12,27 +12,35 @@ Buffer tabs display and management
 
 ---
 
-### toggleterm.nvim
-Terminal integration and management
+### snacks.nvim
+Multi-purpose plugin providing terminal, git, picker, and explorer functionality
 
+#### Terminal
 | Key | Mode | Description |
 |-----|------|-------------|
 | `<C-\>` | n | Toggle Terminal |
-| `<leader>th` | n | ToggleTerm Horizontal |
-| `<leader>tv` | n | ToggleTerm Vertical |
-| `<leader>tt` | n | ToggleTerm Tab |
-| `<leader>tf` | n | ToggleTerm Float |
+| `<leader>th` | n | Terminal Horizontal |
+| `<leader>tv` | n | Terminal Vertical |
+| `<leader>tf` | n | Terminal Float |
 
-**Note:** Use `<number><C-\>` to open multiple terminals
-
----
-
-### lazygit.nvim
-LazyGit integration for Neovim
-
+#### Git
 | Key | Mode | Description |
 |-----|------|-------------|
-| `<leader>lg` | n | Open LazyGit |
+| `<leader>lg` | n | Open Lazygit |
+
+#### Picker
+| Key | Mode | Description |
+|-----|------|-------------|
+| `<leader><space>` | n | Smart Find Files |
+| `<leader>,` | n | Buffers |
+| `<leader>/` | n | Grep |
+| `<leader>:` | n | Command History |
+| `<leader>n` | n | Notification History |
+
+#### Explorer
+| Key | Mode | Description |
+|-----|------|-------------|
+| `<leader>e` | n | File Explorer |
 
 ---
 
